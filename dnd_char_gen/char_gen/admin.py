@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import AbilityScore, Skill, Language, Proficiency, Race
+from .models import AbilityScore, Skill, Language, Proficiency, Race, ProficiencyOptions, LanguageOptions
 
 
 @admin.register(AbilityScore)
@@ -26,3 +26,13 @@ class ProficiencyAdmin(admin.ModelAdmin):
 @admin.register(Race)
 class RaceAdmin(admin.ModelAdmin):
     list_display = ('name', 'size')
+
+
+@admin.register(ProficiencyOptions)
+class ProficiencyOptionsAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(LanguageOptions)
+class LanguageOptionsAdmin(admin.ModelAdmin):
+    pass
